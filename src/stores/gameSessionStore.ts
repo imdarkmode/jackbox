@@ -8,7 +8,7 @@ import { clientEvents, serverEvents } from '@/types/events'
 import router from '@/router';
 
 export const useGameSessionStore = defineStore('gameSessionStore', () => {
-  const socket: Socket = io("http://localhost:3000");
+  const socket: Socket = io("https://jackbox-game-server-a8e9a9c9b127.herokuapp.com/");
   const gameid: Ref<string> = ref('')
   const players: Ref<string[]> = ref([])
   const gameType: Ref<string> = ref('')
