@@ -34,22 +34,18 @@ function connect() {
 </script>
 
 <template>
-  <main>
-    <div>
-      <v-container>
-        <v-sheet rounded :elevation="10" class="join-sheet ">
-          <h1>Enter Game ID</h1>
-          <v-text-field class="join-field" v-model="name" :rules="nameRules" :counter="10" label="Name" required
-            hide-details></v-text-field>
-          <v-text-field class="join-field" v-model="gameid" :rules="gameidRules" :counter="10" label="Game ID" required
-            hide-details></v-text-field>
-          <v-btn block color="primary" @click="connect()">
-            Connect
-          </v-btn>
-        </v-sheet>
-      </v-container>
-    </div>
-  </main>
+  <v-container class="justify-center fill-height">
+    <v-sheet rounded :elevation="10" class="join-sheet ">
+      <h1>Enter Game ID</h1>
+      <v-text-field class="join-field" v-model="name" :rules="nameRules" :counter="10" label="Name" required
+        hide-details></v-text-field>
+      <v-text-field class="join-field" v-model="gameid" :rules="gameidRules" :counter="10" label="Game ID" required
+        hide-details></v-text-field>
+      <v-btn block color="primary" @click="connect()">
+        Connect
+      </v-btn>
+    </v-sheet>
+  </v-container>
 </template>
 
 <style lang="sass">

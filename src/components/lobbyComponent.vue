@@ -18,7 +18,7 @@ function leave() {
 </script>
 
 <template>
-  <v-container>
+  <v-container class="justify-center fill-height">
     <v-card class="lobby-card" rounded elevation="10">
       <v-card-title>Game code: {{ gameid }}</v-card-title>
       <v-card-subtitle>{{ gameSessionStore.gameType }}</v-card-subtitle>

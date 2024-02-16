@@ -24,22 +24,18 @@ function connect(gameType: string) {
 </script>
 
 <template>
-  <main>
-    <div>
-      <v-container>
-        <v-sheet rounded :elevation="10" class="create-sheet">
-          <h1 style="text-align: center;">Choose a Game</h1>
-          <v-form>
-            <v-text-field class="name-field" v-model="name" :counter="10" :rules="nameRules" label="Name" required
-              hide-details></v-text-field>
-            <v-btn v-for="gameType in gameTypes" class="create-btn" block color="primary" @click="connect(gameType)">
-              {{ gameType }}
-            </v-btn>
-          </v-form>
-        </v-sheet>
-      </v-container>
-    </div>
-  </main>
+  <v-container class="justify-center fill-height">
+    <v-sheet rounded :elevation="10" class="create-sheet">
+      <h1 style="text-align: center;">Choose a Game</h1>
+      <v-form>
+        <v-text-field class="name-field" v-model="name" :counter="10" :rules="nameRules" label="Name" required
+          hide-details></v-text-field>
+        <v-btn v-for="gameType in gameTypes" class="create-btn" block color="primary" @click="connect(gameType)">
+          {{ gameType }}
+        </v-btn>
+      </v-form>
+    </v-sheet>
+  </v-container>
 </template>
 
 <style lang="sass">
