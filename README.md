@@ -8,7 +8,7 @@ This client is built with [VueJS]() & [Vuetfify](). It provides an interface for
 
 1) Clone this repository from Github:
 
-```git clone x```
+```git clone https://github.com/thedarkmode/jackbox```
 
 2) Install dependencies:
 
